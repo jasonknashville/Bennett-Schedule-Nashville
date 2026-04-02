@@ -10,10 +10,8 @@
   :root {
     --red:          #CC0000;
     --blue:         #003DA5;
-    --blue-mid:     #0056C7;
     --gold:         #B8973A;
     --gold-light:   #D4AE52;
-    --white:        #FFFFFF;
     --off-white:    #F9F8F6;
     --surface:      #FFFFFF;
     --border:       #E4E1DA;
@@ -116,6 +114,7 @@
   .t-model  { color: #7A6020; background: rgba(184,151,58,0.09); border-color: rgba(184,151,58,0.28); }
   .t-warn   { color: #8B1A00; background: rgba(139,26,0,0.07);   border-color: rgba(139,26,0,0.20); }
   .t-info   { color: #004A70; background: rgba(0,74,112,0.07);   border-color: rgba(0,74,112,0.18); }
+  .t-seller { color: #6B3A00; background: rgba(107,58,0,0.07);   border-color: rgba(107,58,0,0.22); }
 
   /* CALLOUT */
   .callout { margin-top: 14px; padding: 13px 18px; background: var(--surface); border-radius: 0 6px 6px 0; font-size: 13px; color: var(--text-mid); border: 1px solid var(--border-light); border-left: 3px solid var(--gold); }
@@ -153,7 +152,7 @@
   <p class="hero-sub">A carefully planned itinerary organized by geography and drive time — every minute counts.</p>
   <div class="hero-stats">
     <div class="hero-stat">
-      <span class="hero-stat-num">30</span>
+      <span class="hero-stat-num">32</span>
       <span class="hero-stat-label">Total Stops</span>
     </div>
     <div class="hero-stat">
@@ -187,21 +186,21 @@
     </div>
     <div class="summary-card">
       <div class="sc-day">Wednesday</div>
-      <div class="sc-num c-red">8</div>
+      <div class="sc-num c-red">10</div>
       <div class="sc-label">Properties</div>
-      <div class="sc-sub">9:00 am – 7:00 pm<br>MJ + School Pickup</div>
+      <div class="sc-sub">10:00 am – 7:00 pm<br>Goodlettsville + Hendersonville</div>
     </div>
     <div class="summary-card">
       <div class="sc-day">Thursday</div>
-      <div class="sc-num c-gold">10</div>
+      <div class="sc-num c-gold">9</div>
       <div class="sc-label">Properties</div>
-      <div class="sc-sub">9:00 am – 4:00 pm<br>Hendersonville + Goodlettsville</div>
+      <div class="sc-sub">10:00 am – 3:45 pm<br>Hermitage + Mt. Juliet</div>
     </div>
     <div class="summary-card">
       <div class="sc-day">Friday</div>
-      <div class="sc-num c-slate">3</div>
-      <div class="sc-label">Properties</div>
-      <div class="sc-sub">10:00 am – 12:30 pm<br>Hermitage + Mt. Juliet</div>
+      <div class="sc-num c-slate">5</div>
+      <div class="sc-label">To Be Scheduled</div>
+      <div class="sc-sub">Times TBD<br>+ Revisit Contenders</div>
     </div>
   </div>
 
@@ -218,13 +217,13 @@
 
   <hr class="divider">
 
-  <!-- TUESDAY -->
+  <!-- ══ TUESDAY ══ -->
   <div class="day-block">
     <div class="day-header">
       <span class="day-pill dp-red">Tuesday</span>
       <div class="day-title-block">
         <div class="day-title">Mt. Juliet — North, East &amp; South</div>
-        <div class="day-meta">1:00 pm – 6:30 pm &nbsp;·&nbsp;  ✓</div>
+        <div class="day-meta">1:00 pm – 6:30 pm &nbsp;·&nbsp; No city changes after 3 pm ✓</div>
       </div>
       <span class="day-count">9 stops</span>
     </div>
@@ -257,7 +256,7 @@
         <tr>
           <td class="td-time">4:00 PM</td><td class="td-num"><span class="stop-dot">4</span></td>
           <td><div class="stop-name">251 Caroline Way</div></td>
-          <td><span class="tag t-mj">Mt. Juliet</span></td><td> ✓</td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td><td>Staying MJ after 3 pm ✓</td>
         </tr>
         <tr>
           <td class="td-time">4:30 PM</td><td class="td-num"><span class="stop-dot">5</span></td>
@@ -285,15 +284,15 @@
 
   <hr class="divider">
 
-  <!-- WEDNESDAY -->
+  <!-- ══ WEDNESDAY ══ -->
   <div class="day-block">
     <div class="day-header">
       <span class="day-pill dp-blue">Wednesday</span>
       <div class="day-title-block">
-        <div class="day-title">MJ Central &amp; West + Evening Model Home</div>
-        <div class="day-meta">9:00 am – 2:30 pm &nbsp;·&nbsp; School pickup 3:30 pm &nbsp;·&nbsp; 4:30 pm – 7:00 pm</div>
+        <div class="day-title">Goodlettsville → Hendersonville + Evening Model Home</div>
+        <div class="day-meta">10:00 am – 7:00 pm &nbsp;·&nbsp; School pickup 3:30 pm &nbsp;·&nbsp; Tomlinson Pointe 4:30 pm</div>
       </div>
-      <span class="day-count">8 stops</span>
+      <span class="day-count">10 stops</span>
     </div>
     <table class="stop-table">
       <thead>
@@ -301,45 +300,50 @@
       </thead>
       <tbody>
         <tr>
-          <td class="td-time">9:00 AM</td><td class="td-num"><span class="stop-dot">1</span></td>
-          <td><div class="stop-name">7036 Bennett Dr</div></td>
-          <td><span class="tag t-mj">Mt. Juliet</span></td><td>MJ West anchor</td>
+          <td class="td-time">10:00 AM</td><td class="td-num"><span class="stop-dot">1</span></td>
+          <td><div class="stop-name">535 Fall Creek Cir</div></td>
+          <td><span class="tag t-good">Goodlettsville</span></td><td>Copper Creek · opening stop</td>
         </tr>
         <tr>
-          <td class="td-time">9:40 AM</td><td class="td-num"><span class="stop-dot">2</span></td>
-          <td><div class="stop-name">1080 Secretariat Dr</div></td>
-          <td><span class="tag t-mj">Mt. Juliet</span></td><td>Secretariat cluster (3 in a row)</td>
+          <td class="td-time">10:35 AM</td><td class="td-num"><span class="stop-dot">2</span></td>
+          <td><div class="stop-name">687 Fall Creek Cir</div></td>
+          <td><span class="tag t-good">Goodlettsville</span></td><td>Copper Creek · same street</td>
         </tr>
         <tr>
-          <td class="td-time">10:10 AM</td><td class="td-num"><span class="stop-dot">3</span></td>
-          <td><div class="stop-name">1102 Secretariat Dr</div></td>
-          <td><span class="tag t-mj">Mt. Juliet</span></td><td>Same street</td>
+          <td class="td-time">11:15 AM</td><td class="td-num"><span class="stop-dot">3</span></td>
+          <td><div class="stop-name">635 Snap Dragon Ln</div></td>
+          <td><span class="tag t-hville">Hendersonville</span></td><td>North Hville cluster</td>
         </tr>
         <tr>
-          <td class="td-time">10:40 AM</td><td class="td-num"><span class="stop-dot">4</span></td>
-          <td><div class="stop-name">1146 Secretariat Dr &middot; Lot 253</div></td>
-          <td><span class="tag t-mj">Mt. Juliet</span></td><td>Same street</td>
+          <td class="td-time">11:45 AM</td><td class="td-num"><span class="stop-dot">4</span></td>
+          <td><div class="stop-name">643 Snap Dragon Ln</div></td>
+          <td><span class="tag t-hville">Hendersonville</span></td><td>Same street — back-to-back</td>
         </tr>
         <tr>
-          <td class="td-time">11:15 AM</td><td class="td-num"><span class="stop-dot">5</span></td>
-          <td><div class="stop-name">3107 Oxford Dr</div></td>
-          <td><span class="tag t-mj">Mt. Juliet</span></td><td>Short hop from Secretariat</td>
+          <td class="td-time">12:15 PM</td><td class="td-num"><span class="stop-dot">5</span></td>
+          <td><div class="stop-name">108 Lombardi Pl</div></td>
+          <td><span class="tag t-hville">Hendersonville</span></td><td></td>
+        </tr>
+        <tr>
+          <td class="td-time">1:00 PM</td><td class="td-num"><span class="stop-dot model">★</span></td>
+          <td><div class="stop-name">Stoneybrook Model Home</div><div class="stop-sub">Confirm address &amp; hours before visit</div></td>
+          <td><span class="tag t-hville">Hendersonville</span></td>
+          <td><span class="tag t-model">Model Home</span></td>
         </tr>
         <tr class="row-break">
-          <td class="td-time muted">12:00 PM</td><td class="td-num">—</td>
-          <td><span class="break-label">🍽&nbsp; Lunch break &nbsp;·&nbsp; ~45 min</span></td>
-          <td>—</td><td style="color:var(--text-light);font-size:12px;">Grab lunch in MJ</td>
+          <td class="td-time muted">1:45 PM</td><td class="td-num">—</td>
+          <td><span class="break-label">🍽&nbsp; Lunch break &nbsp;·&nbsp; ~40 min</span></td>
+          <td>—</td><td style="color:var(--text-light);font-size:12px;">Hendersonville</td>
         </tr>
         <tr>
-          <td class="td-time">12:50 PM</td><td class="td-num"><span class="stop-dot">6</span></td>
-          <td><div class="stop-name">2100 Oaksprings Pl</div></td>
-          <td><span class="tag t-mj">Mt. Juliet</span></td><td>MJ North</td>
+          <td class="td-time">2:30 PM</td><td class="td-num"><span class="stop-dot">6</span></td>
+          <td><div class="stop-name">103 Camarado Ln</div></td>
+          <td><span class="tag t-hville">Hendersonville</span></td><td>South Hville</td>
         </tr>
         <tr>
-          <td class="td-time">1:30 PM</td><td class="td-num"><span class="stop-dot model">★</span></td>
-          <td><div class="stop-name">Devonshire Model Home</div><div class="stop-sub">2055 Devonshire Dr</div></td>
-          <td><span class="tag t-mj">Mt. Juliet</span></td>
-          <td><span class="tag t-model">Model Home</span></td>
+          <td class="td-time">3:05 PM</td><td class="td-num"><span class="stop-dot">7</span></td>
+          <td><div class="stop-name">123 Cobbler Cir</div></td>
+          <td><span class="tag t-hville">Hendersonville</span></td><td>~20 min to MJMS from here ✓</td>
         </tr>
         <tr class="row-school">
           <td class="td-time muted">3:30 PM</td><td class="td-num">—</td>
@@ -357,99 +361,22 @@
     <div class="callout warn">
       <strong>Heads up:</strong> Tomlinson Pointe's Wednesday hours are <strong>3:00–5:00 PM only</strong>. Call ahead so they don't lock up before your 4:30 arrival — <strong>615-535-4455</strong>.
     </div>
+    <div class="callout" style="margin-top:10px;">
+      <strong>Note:</strong> 156 Cobbler Cir is not on the firm schedule today — if you're running ahead after 123 Cobbler, it's a soft add right next door before heading to school pickup.
+    </div>
   </div>
 
   <hr class="divider">
 
-  <!-- THURSDAY -->
+  <!-- ══ THURSDAY ══ -->
   <div class="day-block">
     <div class="day-header">
       <span class="day-pill dp-gold">Thursday</span>
       <div class="day-title-block">
-        <div class="day-title">Hendersonville &amp; Goodlettsville Loop</div>
-        <div class="day-meta">9:00 am – 4:00 pm &nbsp;·&nbsp; Full day north of Old Hickory Lake</div>
+        <div class="day-title">Hermitage → Mt. Juliet Arc</div>
+        <div class="day-meta">10:00 am – 3:45 pm &nbsp;·&nbsp; Southeast to northwest loop</div>
       </div>
-      <span class="day-count">10 stops</span>
-    </div>
-    <table class="stop-table">
-      <thead>
-        <tr><th>Time</th><th class="td-num">#</th><th>Property</th><th>City</th><th>Notes</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="td-time">9:00 AM</td><td class="td-num"><span class="stop-dot">1</span></td>
-          <td><div class="stop-name">103 Camarado Ln</div></td>
-          <td><span class="tag t-hville">Hendersonville</span></td><td>South Hville anchor</td>
-        </tr>
-        <tr>
-          <td class="td-time">9:50 AM</td><td class="td-num"><span class="stop-dot">2</span></td>
-          <td><div class="stop-name">123 Cobbler Cir</div></td>
-          <td><span class="tag t-hville">Hendersonville</span></td><td>Cobbler cluster</td>
-        </tr>
-        <tr>
-          <td class="td-time">10:20 AM</td><td class="td-num"><span class="stop-dot">3</span></td>
-          <td><div class="stop-name">156 Cobbler Cir</div></td>
-          <td><span class="tag t-hville">Hendersonville</span></td><td>Same street</td>
-        </tr>
-        <tr>
-          <td class="td-time">11:00 AM</td><td class="td-num"><span class="stop-dot">4</span></td>
-          <td><div class="stop-name">108 Lombardi Pl</div></td>
-          <td><span class="tag t-hville">Hendersonville</span></td><td>Short drive north</td>
-        </tr>
-        <tr>
-          <td class="td-time">11:40 AM</td><td class="td-num"><span class="stop-dot model">★</span></td>
-          <td><div class="stop-name">Stoneybrook Model Home</div><div class="stop-sub">Confirm address &amp; hours before visit</div></td>
-          <td><span class="tag t-hville">Hendersonville</span></td>
-          <td><span class="tag t-model">Model Home</span></td>
-        </tr>
-        <tr class="row-break">
-          <td class="td-time muted">12:20 PM</td><td class="td-num">—</td>
-          <td><span class="break-label">🍽&nbsp; Lunch break &nbsp;·&nbsp; ~45 min</span></td>
-          <td>—</td><td style="color:var(--text-light);font-size:12px;">Hendersonville</td>
-        </tr>
-        <tr>
-          <td class="td-time">1:15 PM</td><td class="td-num"><span class="stop-dot">5</span></td>
-          <td><div class="stop-name">635 Snap Dragon Ln</div></td>
-          <td><span class="tag t-hville">Hendersonville</span></td><td>North Hville cluster</td>
-        </tr>
-        <tr>
-          <td class="td-time">1:45 PM</td><td class="td-num"><span class="stop-dot">6</span></td>
-          <td><div class="stop-name">643 Snap Dragon Ln</div></td>
-          <td><span class="tag t-hville">Hendersonville</span></td><td>Same street — quick back-to-back</td>
-        </tr>
-        <tr>
-          <td class="td-time">2:30 PM</td><td class="td-num"><span class="stop-dot">7</span></td>
-          <td><div class="stop-name">535 Fall Creek Cir</div></td>
-          <td><span class="tag t-good">Goodlettsville</span></td><td>Fall Creek cluster (~15 min west)</td>
-        </tr>
-        <tr>
-          <td class="td-time">3:05 PM</td><td class="td-num"><span class="stop-dot">8</span></td>
-          <td><div class="stop-name">687 Fall Creek Cir</div></td>
-          <td><span class="tag t-good">Goodlettsville</span></td><td>Same street</td>
-        </tr>
-        <tr>
-          <td class="td-time">3:35 PM</td><td class="td-num"><span class="stop-dot">9</span></td>
-          <td><div class="stop-name">688 Fall Creek Cir</div></td>
-          <td><span class="tag t-good">Goodlettsville</span></td><td>Same street &nbsp;·&nbsp; Done ~4:10 pm</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="callout">
-      <strong>Thursday tip:</strong> The 3 Fall Creek and 2 Snap Dragon homes are back-to-back clusters — they move quickly. If energy is running low, the Fall Creek trio can be trimmed to 2 without much backtracking.
-    </div>
-  </div>
-
-  <hr class="divider">
-
-  <!-- FRIDAY -->
-  <div class="day-block">
-    <div class="day-header">
-      <span class="day-pill dp-slate">Friday</span>
-      <div class="day-title-block">
-        <div class="day-title">Hermitage &amp; Hessey Rd — Light Day &amp; Revisits</div>
-        <div class="day-meta">10:00 am – 12:30 pm &nbsp;·&nbsp; Afternoon open for second looks</div>
-      </div>
-      <span class="day-count">3 stops</span>
+      <span class="day-count">9 stops</span>
     </div>
     <table class="stop-table">
       <thead>
@@ -462,24 +389,108 @@
           <td><span class="tag t-herm">Hermitage</span></td><td></td>
         </tr>
         <tr>
-          <td class="td-time">10:45 AM</td><td class="td-num"><span class="stop-dot">2</span></td>
+          <td class="td-time">10:40 AM</td><td class="td-num"><span class="stop-dot">2</span></td>
           <td><div class="stop-name">2104 Bluejay Ct</div></td>
           <td><span class="tag t-herm">Hermitage</span></td><td>~5 min from West Point Cove</td>
         </tr>
         <tr>
-          <td class="td-time">11:30 AM</td><td class="td-num"><span class="stop-dot">3</span></td>
-          <td><div class="stop-name">4660 Hessey Rd</div></td>
-          <td><span class="tag t-mj">Mt. Juliet</span></td><td>Wrap ~12:15 pm</td>
+          <td class="td-time">11:15 AM</td><td class="td-num"><span class="stop-dot">3</span></td>
+          <td><div class="stop-name">1102 Secretariat Dr</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td><td></td>
         </tr>
-        <tr class="row-school">
-          <td class="td-time muted">Afternoon</td><td class="td-num">—</td>
-          <td><span class="break-label">🔄&nbsp; Revisit favorites</span></td>
-          <td>—</td><td style="color:var(--text-light);font-size:12px;">Afternoon open — circle back to any must-sees</td>
+        <tr>
+          <td class="td-time">11:35 AM</td><td class="td-num"><span class="stop-dot">4</span></td>
+          <td><div class="stop-name">1146 Secretariat Dr &middot; Lot 253</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td><td>Same street</td>
+        </tr>
+        <tr>
+          <td class="td-time">12:00 PM</td><td class="td-num"><span class="stop-dot">5</span></td>
+          <td><div class="stop-name">3107 Oxford Dr</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td>
+          <td><span class="tag t-seller">Seller's last showing of day</span></td>
+        </tr>
+        <tr class="row-break">
+          <td class="td-time muted">12:45 PM</td><td class="td-num">—</td>
+          <td><span class="break-label">🍽&nbsp; Lunch break &nbsp;·&nbsp; ~45 min</span></td>
+          <td>—</td><td style="color:var(--text-light);font-size:12px;">MJ area</td>
+        </tr>
+        <tr>
+          <td class="td-time">1:00 PM</td><td class="td-num"><span class="stop-dot">6</span></td>
+          <td><div class="stop-name">2100 Oaksprings Pl</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td><td>MJ North</td>
+        </tr>
+        <tr>
+          <td class="td-time">2:00 PM</td><td class="td-num"><span class="stop-dot model">★</span></td>
+          <td><div class="stop-name">Tomlinson Pointe Model Home</div><div class="stop-sub">470 Tomlinson Pointe Dr</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td>
+          <td><span class="tag t-model">Model Home</span> &nbsp; Thu 10am–5pm ✓</td>
+        </tr>
+        <tr>
+          <td class="td-time">3:00 PM</td><td class="td-num"><span class="stop-dot model">★</span></td>
+          <td><div class="stop-name">Devonshire Model Home</div><div class="stop-sub">2055 Devonshire Dr</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td>
+          <td><span class="tag t-model">Model Home</span> &nbsp; Call ahead for late hours</td>
         </tr>
       </tbody>
     </table>
     <div class="callout">
-      <strong>Friday strategy:</strong> Friday is intentionally light. Use the afternoon to revisit your top 2–3 with fresh eyes and your ranking notes in hand.
+      <strong>Oxford note:</strong> Seller has requested noon as the latest showing of the day — the 12:00 PM slot is firm. Don't push this one back.
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ══ FRIDAY ══ -->
+  <div class="day-block">
+    <div class="day-header">
+      <span class="day-pill dp-slate">Friday</span>
+      <div class="day-title-block">
+        <div class="day-title">Flex Day — To Be Scheduled</div>
+        <div class="day-meta">Times TBD &nbsp;·&nbsp; Review list with client and confirm what to book</div>
+      </div>
+      <span class="day-count">5 + revisit</span>
+    </div>
+
+    <table class="stop-table">
+      <thead>
+        <tr><th class="td-num">#</th><th>Property</th><th>City</th><th>Commute Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-num"><span class="stop-dot">1</span></td>
+          <td><div class="stop-name">193 Karen Dr</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td>
+          <td>MJ North — pairs naturally with 251 Caroline Way, same part of town</td>
+        </tr>
+        <tr>
+          <td class="td-num"><span class="stop-dot">2</span></td>
+          <td><div class="stop-name">251 Caroline Way</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td>
+          <td>MJ Southeast — back-to-back with 193 Karen, minimal drive</td>
+        </tr>
+        <tr>
+          <td class="td-num"><span class="stop-dot">3</span></td>
+          <td><div class="stop-name">1080 Secretariat Dr</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td>
+          <td>MJ West — easy add-on to or from Bennett Dr, same corridor</td>
+        </tr>
+        <tr>
+          <td class="td-num"><span class="stop-dot">4</span></td>
+          <td><div class="stop-name">7036 Bennett Dr</div></td>
+          <td><span class="tag t-mj">Mt. Juliet</span></td>
+          <td>MJ West — same corridor as Secretariat, do these two together</td>
+        </tr>
+        <tr>
+          <td class="td-num"><span class="stop-dot">5</span></td>
+          <td><div class="stop-name">156 Cobbler Cir</div></td>
+          <td><span class="tag t-hville">Hendersonville</span></td>
+          <td>Only Hendersonville stop — schedule first or last to avoid a mid-day city switch</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout" style="margin-top:14px;">
+      <strong>Revisit contender:</strong> <strong>535 Fall Creek Cir</strong> (Goodlettsville) is the current front-runner for a second look. If added, pair it with 156 Cobbler Cir and run both in one north loop — Goodlettsville first, Hendersonville on the way back.
     </div>
   </div>
 
@@ -506,7 +517,7 @@ new Chart(document.getElementById('chartDay').getContext('2d'), {
     labels: ['Tuesday', 'Wednesday', 'Thursday', 'Friday'],
     datasets: [{
       label: 'Stops',
-      data: [9, 8, 10, 3],
+      data: [9, 10, 9, 5],
       backgroundColor: ['rgba(204,0,0,0.65)','rgba(0,61,165,0.65)','rgba(184,151,58,0.70)','rgba(74,85,128,0.60)'],
       borderRadius: 4,
       borderSkipped: false,
@@ -527,7 +538,7 @@ new Chart(document.getElementById('chartCity').getContext('2d'), {
   data: {
     labels: ['Mt. Juliet', 'Hendersonville', 'Goodlettsville', 'Hermitage'],
     datasets: [{
-      data: [18, 7, 3, 2],
+      data: [17, 8, 2, 2],
       backgroundColor: ['rgba(0,61,165,0.70)','rgba(204,0,0,0.65)','rgba(184,151,58,0.70)','rgba(74,85,128,0.60)'],
       borderWidth: 3,
       borderColor: '#FFFFFF',
